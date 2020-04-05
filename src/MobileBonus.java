@@ -3,11 +3,12 @@ public class MobileBonus {
         double currentbalance = 100.00; //текущий баланс
         double bonus = 100.00; // цена одного бонуса
         double depositamount = 10.00; // сумма пополнения
+        int amountbonus;// итоговая сумма бонусов в целых
         if (depositamount >= 1000.00) {
-            bonus = depositamount / bonus;
+            amountbonus = (int)(depositamount / bonus);
         } else{
-            bonus = 0;
+            amountbonus = 0;
         }
-       System.out.println(bonus);
+       System.out.println(amountbonus);
     }
 }
